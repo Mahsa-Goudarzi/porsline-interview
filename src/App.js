@@ -5,6 +5,7 @@ import Keyboard from "./components/keyboard/Keyboard";
 
 import "./App.css";
 import WordContext from "./store/words-context";
+import GameOver from "./components/game-over/GameOver";
 
 function App() {
   const wordCtx = useContext(WordContext);
@@ -13,7 +14,7 @@ function App() {
     <div className="App">
       <h2>Wordle</h2>
       <GameBoard guesses={wordCtx.guesses} />
-      <Keyboard />
+      {wordCtx.gameOver.gameOver ? <GameOver /> : <Keyboard />}
     </div>
   );
 }

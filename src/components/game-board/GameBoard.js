@@ -1,5 +1,5 @@
 import React from "react";
-import BoardWord from "./board-word/BoardWord";
+import BoardWord from "./board-detail/BoardWord";
 
 export default function GameBoard({ guesses }) {
   return guesses.map((word, i) => {

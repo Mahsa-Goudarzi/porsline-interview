@@ -12,11 +12,9 @@ const initialBoard = [
 const initialGuess = { attempt: 0, letterPos: 0 };
 
 export const WordContext = React.createContext({
-  word: "",
+  correctWord: "",
   guesses: null,
   currentGuess: null,
-  setGuesses: (newBoard) => {},
-  setCurrGuess: (newGuess) => {},
   onClear: () => {},
   onEnter: () => {},
   onClickLetter: (value) => {},
@@ -48,11 +46,9 @@ export const WordsContextProvider = (props) => {
   };
 
   const contextValue = {
-    word: "rainy",
+    correctWord: "RAINY",
     guesses: board,
     currentGuess: currGuess,
-    setGuesses: setBoard,
-    setCurrGuess: setCurrGuess,
     onClear: handleClear,
     onEnter: handleEnter,
     onClickLetter: handleClickLetter,

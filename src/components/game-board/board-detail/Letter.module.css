@@ -3,3 +3,18 @@
   padding: 20px;
   border: 1px solid grey;
 }
+
+.correct {
+  color: white;
+  background-color: #528c4d;
+}
+
+.wrong {
+  color: white;
+  background-color: grey;
+}
+
+.semicorrect {
+  color: white;
+  background-color: #b49e3a;
+}

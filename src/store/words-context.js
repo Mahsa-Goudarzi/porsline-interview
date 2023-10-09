@@ -16,7 +16,7 @@ export const WordContext = React.createContext({
   guesses: null,
   currentGuess: null,
   setGuesses: (newBoard) => {},
-  setCurrGuess: (newAtt, newPos) => {},
+  setCurrGuess: (newGuess) => {},
 });
 
 export const WordsContextProvider = (props) => {
@@ -27,8 +27,8 @@ export const WordsContextProvider = (props) => {
     setBoard(newBoard);
   };
 
-  const setCurrGuessHandler = (att, pos) => {
-    setCurrGuess({ attempt: att, letterPos: pos });
+  const setCurrGuessHandler = (newGuess) => {
+    setCurrGuess(newGuess);
   };
 
   const contextValue = {

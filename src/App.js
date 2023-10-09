@@ -6,7 +6,7 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <h2 className="App-header">Wordle</h2>
+      <h2>Wordle</h2>
       <GameBoard />
       <Keyboard />
     </div>
